@@ -23,14 +23,49 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
 
+    <!-- 구글 아이콘 api-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
     <!-- main css file 연결 -->
     <link rel="stylesheet" href="./css/main.css">
 
-
+    <script defer src="./js/main.js"></script>
 
 
 </head>
 <body>
-    hello
+
+    <!-- HEADER -->
+    <header>
+        <div class="inner">
+
+            <a href="/" class="logo">
+                <img src="./images/inbopark_logo.png" alt="INBOPARK">
+            </a>
+
+            <div class="sub-menu">
+                <ul class="menu">
+                    <li>
+                        <a href="/signin">Sign In</a><!--로그인 페이지로 연결-->
+                    </li>
+                    <li>
+                        <a href="javascript::void(0)">My search</a>
+                    </li>
+                    <li>
+                        <a href="javascript::void(0)">계절별 검색</a>
+                    </li>
+                    <li>
+                        <a href="javascript::void(0)">지역별 검색</a>
+                    </li>
+                    <div class="search">
+                        <input type="text"/>
+                        <div class="material-icons">search</div>
+                    </div>
+                </ul>
+            </div>
+
+        </div>
+    </header>
+
 </body>
 </html>
