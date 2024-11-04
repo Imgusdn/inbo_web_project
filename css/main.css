@@ -62,17 +62,17 @@ header .sub-menu ul.menu li:first-child:before{
     display: none;
 }
 header .sub-menu ul.menu li a{
-    font-size: 12px;
     padding: 11px 16px;
     display: block;
+    font-size: 13px;
     color: #656565;
 }
 header .sub-menu ul.menu li a:hover{
     color: #000;
 }
 header .sub-menu .search {
-    height: 34px;
     position: relative;
+    height: 34px;
 }
 header .sub-menu .search input {
     width: 36px;
