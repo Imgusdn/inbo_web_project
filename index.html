@@ -35,6 +35,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script defer src="./js/main.js"></script>
 
+    <!-- swiper 외부 라이브러리 연결 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 </head>
 <body>
@@ -226,6 +229,51 @@
 
         </div>
     </section>
+
+
+    <sction class="notice">
+
+        <div class="notice-line">
+            <div class="bg-left"></div>
+            <div class="bg-right"></div>
+            <div class="inner">
+
+                <div class="inner__left">
+                    <h2>공지사항</h2>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="javascript:void(0)">크리스마스</a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="javascript:void(0)">당첨자 발표</a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="javascript:void(0)">버전 업데이트</a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="javascript:void(0)">전자 영수증</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="javascript:void(0)" class="notice-line__more">
+                        <div class="material-icons">add_circle</div>
+                    </a>
+                </div>
+                <div class="inner__right">
+                    <h2>명전파크 프로모션</h2>
+                    <div class="toggle-promotion">
+                        <div class="material-icons">upload</div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </sction>
 
 
 </body>
