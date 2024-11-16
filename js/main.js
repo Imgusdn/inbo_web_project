@@ -29,15 +29,15 @@ window.addEventListener('scroll', _.throttle(function(){
         gsap.to(badgeEl, .6, {
             opacity: 0,
             display: 'none'
-        });
+        })
     }else{
         // 배지 보이기
         gsap.to(badgeEl, .6, {
             opacity: 1,
             display: 'block'
-        });
+        })
     }
-}, 300));
+}, 300))
 // _.throttle(함수, 시간)
 
 // new Swiper(선택자, 옵션)
@@ -45,7 +45,7 @@ new Swiper('.notice-line .swiper-container',{
   direction: 'vertical',
   autoplay: true,
   loop: true
-});
+})
 
 new Swiper('.promotion .swiper-container', {
   slidesPerView: 3,
@@ -63,4 +63,19 @@ new Swiper('.promotion .swiper-container', {
     prevEl:'.promotion .swiper-prev',
     nextEl:'.promotion .swiper-next'
   }
-});
+})
+
+new Swiper('.awards .swiper-container', {
+ 
+  autoplay: true, 
+  loop: true, 
+  spaceBetween: 30,
+  slidesPerView: 5,
+  
+  navigation: { 
+    prevEl: '.awards .swiper-prev', 
+    nextEl: '.awards .swiper-next' 
+  }
+})
+
+
