@@ -1,3 +1,5 @@
+
+
 body,html{
     margin: 0;
     padding: 0;
@@ -38,7 +40,16 @@ a{
     display: block;
     transition: .4s;
 }
-
+.btn--reverse {
+    background-color: #ffffff; /* 반전된 배경색 */
+    color: #333333; /* 반전된 글자색 */
+    border: 2px solid #333333; /* 경계선 추가 */
+}
+.btn--reverse:hover {
+    background-color: #333333; /* 반전 효과 */
+    color: #ffffff; /* 글자색 변경 */
+    border-color: #ffffff; /* 경계선 색상 변경 */
+}
 /* HEADER */
 header {
     width: 100%;
@@ -404,3 +415,44 @@ header .badges .badge{
 }
 
 
+/* REWARDS */
+.rewards{
+    position: relative;
+}
+.rewards .bg-left{
+    width: 50%;
+    height: 100%;
+    background-color: #272727;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.rewards .bg-right{
+    width: 50%;
+    height: 100%;
+    background-color: #d5c798;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.rewards .inner{
+    background-image: url("../images/rewards.jpg");
+    height: 241px;
+}
+
+.rewards .btn-group{
+    position: absolute;
+    bottom: 40px;
+    left: 1110px;
+    right: 0;
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.rewards .btn-group .btn.sign-up{
+    margin-right: 10px;
+}
+.rewards .btn-group .btn.sign-in{
+    width: 110px;
+}
