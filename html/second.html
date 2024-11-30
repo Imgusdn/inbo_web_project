@@ -6,14 +6,14 @@
     <title>계절별 여행지 추천</title>
     <!-- 소셜 미디어로 url이 공유될 때 우선적으로 활용되는 정보를 오픈 그래프로 나타냄 -->
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Starbucks" />
-    <meta property="og:title" content="Starbucks Coffee Korea" />
-    <meta property="og:description" content="스타벅스는 세계에서 가장 큰 다국적 커피 전문점으로, 64개국에서 총 23,187개의 매점을 운영하고 있습니다." />
-    <meta property="og:image" content="./images/japan_seo.jpg" />
-    <meta property="og:url" content="https://starbucks.co.kr" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="/images/japan_seo.jpg" />
+    <meta property="og:url" content="" />
 
     <!-- 브라우저에서 지정하는 스타일 초기화 -->
-    <link rel="icon" href="./favicon.png" type="image/x-icon" />
+    <link rel="icon" href="/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
 
     <!-- 어떤 웹 브라우저 환경에서도 동일한 폰트를 사용하기 위해 구글 폰트 api를 가져옴 -->
@@ -25,15 +25,15 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 
     <!-- main css file 연결 -->
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="/css/main.css">
 
     <!-- 많은 함수가 동시에 실행 될 때 웹 페이지 버벅거림 및 많은 부담을 줄이기 위해 웹 라이브러리 js 읽어오기 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- 애니메이션을 처리해줄 gsap cdn 라이브러리 불러오기 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     
-    <script defer src="./js/youtube.js"></script>
-    <script defer src="./js/main.js"></script>
+    <script defer src="/js/youtube.js"></script>
+    <script defer src="/js/main.js"></script>
 
     <!-- swiper 외부 라이브러리 연결 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
@@ -46,177 +46,176 @@
 
 </head>
 <body>
-        <!-- HEADER -->
-        <header>
-            <div class="inner">
-    
-                <a href="/" class="logo">
-                    <img src="/images/inbopark_logo.png" alt="INBOPARK">
-                </a>
-    
-                <div class="sub-menu">
-                    <ul class="menu">
-                        <li>
-                            <a href="/signin">로그인</a><!--로그인 페이지로 연결-->
-                        </li>
-                        <li>
-                            <a href="javascript::void(0)">상세 검색</a>
-                        </li>
-                        <li>
-                            <a href="javascript::void(0)">계절별 검색</a>
-                        </li>
-                        <li>
-                            <a href="javascript::void(0)">지역별 검색</a>
-                        </li>
-                        <div class="search">
-                            <input type="text"/>
-                            <div class="material-icons">search</div>
-                        </div>
-                    </ul>
-                </div>
-    
-                <ul class="main-menu">
-                    <li class="item">
-                        <div class="item__name">계절 별 추천</div>
-                        <div class="item__contents">
-                            <div class="contents__menu">
-                                <ul class="inner">
-                                    <li>
-                                       <h4>계절</h4> 
-                                       <ul>
-                                        <li>봄</li>
-                                        <li>여름</li>
-                                        <li>가을</li>
-                                        <li>겨울</li>
-                                       </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="contents__texture">
-                                <div class="inner">
-                                    <h4>계절 별 어울리는 여행지를 찾아드립니다.</h4>
-                                    <p>다양하고 즐거운 여행지를 찾아드립니다.</p>
-                                    <h4>나와 잘 맞는 계절별 여행지 찾기</h4>
-                                    <p>여러분에게 즐거운 여행이 될 수 있는 여행지를 찾아드립니다.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="item">
-                        <div class="item__name">지역별 추천</div>
-                        <div class="item__contents">
-                            <div class="contents__menu">
-                                <ul class="inner">
-                                    <li>
-                                       <h4>지역</h4>
-                                       <ul>
-                                        <li><a href="/sub.html">도쿄</a></li>
-                                        <li><a href="/sub.html">오사카</a></li>
-                                        <li><a href="/sub.html">료칸</a></li>
-                                        <li><a href="/sub.html">아키하바라</a></li>
-                                       </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="contents__texture">
-                                <div class="inner">
-                                    <h4>지역 별 어울리는 여행지를 찾아드립니다.</h4>
-                                    <p>다양하고 즐거운 여행지를 찾아드립니다.</p>
-                                    <h4>나와 잘 맞는 지역별 여행지 찾기</h4>
-                                    <p>여러분에게 즐거운 여행이 될 수 있는 여행지를 찾아드립니다.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="item">
-                        <div class="item__name">맛집 추천</div>
-                        <div class="item__contents">
-                            <div class="contents__menu">
-                                <ul class="inner">
-                                    <li>
-                                       <h4>맛집</h4>
-                                       <ul>
-                                        <li>도쿄</li>
-                                        <li>오사카</li>
-                                        <li>료칸</li>
-                                        <li>아키하바라</li>
-                                       </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="contents__texture">
-                                <div class="inner">
-                                    <h4>일본의 맛집을 찾아드립니다.</h4>
-                                    <p>다양하고 맛있는 맛집을 찾아드립니다.</p>
-                                    <h4>나의 입맛에 잘 맞는 일본 맛집 찾기</h4>
-                                    <p>여러분의 입맛에 맞는 일본 맛집을 찾아드립니다.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="item">
-                        <div class="item__name">공지사항</div>
-                        <div class="item__contents">
-                            <div class="contents__menu">
-                                <ul class="inner">
-                                    <li>
-                                       <h4>공지사항</h4>
-                                       <ul>
-                                        <li>여행 시 주의할점</li>
-                                        <li>계절별 꿀팁</li>
-                                        <li>지역별 꿀팁</li>
-                                        <li>교통</li>
-                                       </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="contents__texture">
-                                <div class="inner">
-                                    <h4>다양하고 중요한 정보들을 공지해드립니다.</h4>
-                                    <p>일본의 문화, 여행시 주의할 점 공지</p>
-                                    <h4>여행시 꿀팁을 알려드립니다.</h4>
-                                    <p>여행을 즐겁게 즐기실 수 있게 계절, 지역별 꿀팁 공지</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="item">
-                        <div class="item__name">고객센터</div>
-                        <div class="item__contents">
-                            <div class="contents__menu">
-                                <ul class="inner">
-                                    <li>
-                                       <h4>고객센터</h4>
-                                       <ul>
-                                        <li>건의함</li>
-                                        <li>리뷰</li>
-                                       </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="contents__texture">
-                                <div class="inner">
-                                    <h4>고객님들의 편의를 위한 게시판입니다.</h4>
-                                    <p>궁금한 점이나 불만족스러운 점을 말씀해주세요.</p>
-                                    <h4>리뷰를 남겨 다양한 사람들에게 정보를 공유해주세요.</h4>
-                                    <p>불편한 점 좋은 점들을 리뷰를 통해 남겨주세요.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-    
-            <div class="badges">
-                <div class="badge">
-                    <img src="/images/badge1.jpg" alt="Badge">
-                </div>
-                <div class="badge">
-                    <img src="/images/badge2.jpg" alt="Badge">
-                </div>
-            </div>
-        </header>
+   <!-- HEADER -->
+   <header>
+    <div class="inner">
 
+        <a href="/html/index.html" class="logo">
+            <img src="/images/inbopark_logo.png" alt="INBOPARK">
+        </a>
+
+        <div class="sub-menu">
+            <ul class="menu">
+                <li>
+                    <a href="/signin">로그인</a><!--로그인 페이지로 연결-->
+                </li>
+                <li>
+                    <a href="javascript::void(0)">상세 검색</a>
+                </li>
+                <li>
+                    <a href="javascript::void(0)">계절별 검색</a>
+                </li>
+                <li>
+                    <a href="javascript::void(0)">지역별 검색</a>
+                </li>
+                <div class="search">
+                    <input type="text"/>
+                    <div class="material-icons">search</div>
+                </div>
+            </ul>
+        </div>
+
+        <ul class="main-menu">
+            <li class="item">
+                <div class="item__name">계절 별 추천</div>
+                <div class="item__contents">
+                    <div class="contents__menu">
+                        <ul class="inner">
+                            <li>
+                               <h4>계절</h4> 
+                               <ul>
+                                <li><a href="/html/second.html">봄</a></li>
+                                <li><a href="/html/second.html">여름</a></li>
+                                <li><a href="/html/second.html">가을</a></li>
+                                <li><a href="/html/second.html">겨울</a></li>
+                               </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contents__texture">
+                        <div class="inner">
+                            <h4>계절 별 어울리는 여행지를 찾아드립니다.</h4>
+                            <p>다양하고 즐거운 여행지를 찾아드립니다.</p>
+                            <h4>나와 잘 맞는 계절별 여행지 찾기</h4>
+                            <p>여러분에게 즐거운 여행이 될 수 있는 여행지를 찾아드립니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="item__name">지역별 추천</div>
+                <div class="item__contents">
+                    <div class="contents__menu">
+                        <ul class="inner">
+                            <li>
+                               <h4>지역</h4>
+                               <ul>
+                                <li><a href="/html/sub.html">도쿄</a></li>
+                                <li><a href="/html/sub.html">오사카</a></li>
+                                <li><a href="/html/sub.html">료칸</a></li>
+                                <li><a href="/html/sub.html">아키하바라</a></li>
+                               </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contents__texture">
+                        <div class="inner">
+                            <h4>지역 별 어울리는 여행지를 찾아드립니다.</h4>
+                            <p>다양하고 즐거운 여행지를 찾아드립니다.</p>
+                            <h4>나와 잘 맞는 지역별 여행지 찾기</h4>
+                            <p>여러분에게 즐거운 여행이 될 수 있는 여행지를 찾아드립니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="item__name">맛집 추천</div>
+                <div class="item__contents">
+                    <div class="contents__menu">
+                        <ul class="inner">
+                            <li>
+                               <h4>맛집</h4>
+                               <ul>
+                                <li>도쿄</li>
+                                <li>오사카</li>
+                                <li>료칸</li>
+                                <li>아키하바라</li>
+                               </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contents__texture">
+                        <div class="inner">
+                            <h4>일본의 맛집을 찾아드립니다.</h4>
+                            <p>다양하고 맛있는 맛집을 찾아드립니다.</p>
+                            <h4>나의 입맛에 잘 맞는 일본 맛집 찾기</h4>
+                            <p>여러분의 입맛에 맞는 일본 맛집을 찾아드립니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="item__name">공지사항</div>
+                <div class="item__contents">
+                    <div class="contents__menu">
+                        <ul class="inner">
+                            <li>
+                               <h4>공지사항</h4>
+                               <ul>
+                                <li>여행 시 주의할점</li>
+                                <li>계절별 꿀팁</li>
+                                <li>지역별 꿀팁</li>
+                                <li>교통</li>
+                               </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contents__texture">
+                        <div class="inner">
+                            <h4>다양하고 중요한 정보들을 공지해드립니다.</h4>
+                            <p>일본의 문화, 여행시 주의할 점 공지</p>
+                            <h4>여행시 꿀팁을 알려드립니다.</h4>
+                            <p>여행을 즐겁게 즐기실 수 있게 계절, 지역별 꿀팁 공지</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="item__name">고객센터</div>
+                <div class="item__contents">
+                    <div class="contents__menu">
+                        <ul class="inner">
+                            <li>
+                               <h4>고객센터</h4>
+                               <ul>
+                                <li>건의함</li>
+                                <li>리뷰</li>
+                               </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contents__texture">
+                        <div class="inner">
+                            <h4>고객님들의 편의를 위한 게시판입니다.</h4>
+                            <p>궁금한 점이나 불만족스러운 점을 말씀해주세요.</p>
+                            <h4>리뷰를 남겨 다양한 사람들에게 정보를 공유해주세요.</h4>
+                            <p>불편한 점 좋은 점들을 리뷰를 통해 남겨주세요.</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="badges">
+        <div class="badge">
+            <img src="/images/badge1.jpg" alt="Badge">
+        </div>
+        <div class="badge">
+            <img src="/images/badge2.jpg" alt="Badge">
+        </div>
+    </div>
+</header>
 
 <div class="container">
     <div class="red">봄</div> <!-- 봄 여행지 탑 3 -->
