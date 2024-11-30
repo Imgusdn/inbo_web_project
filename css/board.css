@@ -1,0 +1,27 @@
+.board-section {
+    padding: 40px 0;
+    background-color: #f6f5ef;
+    margin-top: 100px;
+}
+.board-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+.board-section table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    background: #fff;
+}
+.board-section table th, .board-section table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+.board-section table th {
+    background: #f5f5f5;
+    font-weight: bold;
+}
+.board-section table tbody tr:hover {
+    background: #f9f9f9;
+}

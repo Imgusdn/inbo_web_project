@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>일본 여행지 추천</title>
+
+<style>
+body {
+font-family: Arial, sans-serif;
+background-image: url('https://cdn.digitaltoday.co.kr/news/photo/202310/490089_456893_1647.png');
+background-size: cover;
+color: #333;
+display: flex;
+justify-content: center;
+}
+.container {
+max-width: 1200px;
+margin: 0 auto;
+background-color: rgba(255, 255, 255, 0.8);
+border-radius: 8px;
+padding: 20px;
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+flex: 1;
+}
+.header {
+text-align: center;
+margin-bottom: 20px;
+}
+.banner {
+background-color: rgba(255, 255, 255, 0.9);
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+margin-bottom: 20px;
+}
+.section {
+margin-bottom: 20px;
+}
+.top-destinations {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+.destination {
+flex: 1 1 calc(33% - 20px);
+margin: 10px;
+background-color: #eaeaea;
+border-radius: 8px;
+text-align: center;
+cursor: pointer;
+overflow: hidden;
+transition: transform 0.3s;
+}
+.destination img {
+width: 100%;
+border-radius: 8px 8px 0 0;
+}
+.destination:hover {
+transform: scale(1.05);
+}
+.destination h3 {
+margin: 10px 0;
+}
+.modal {
+display: none;
+position: fixed;
+z-index: 1;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+overflow: auto;
+background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-content {
+background-color: #fff;
+margin: 15% auto;
+padding: 20px;
+border: 1px solid #888;
+width: 80%;
+border-radius: 8px;
+}
+.close {
+color: #aaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+.close:hover,
+.close:focus {
+color: black;
+text-decoration: none;
+cursor: pointer;
+}
+.sidebar {
+width: 200px; /* 광고 영역 너비 */
+margin: 0 10px;
+background-color: rgba(255, 255, 255, 0.9);
+padding: 10px;
+border-radius: 8px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.sidebar img {
+width: 100%; /* 사이드바 이미지 크기 조정 */
+border-radius: 8px;
+margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+.destination {
+flex: 1 1 calc(50% - 20px);
+}
+}
+@media (max-width: 480px) {
+.destination {
+flex: 1 1 100%;
+}
+.sidebar {
+display: none; /* 작은 화면에서 광고 숨김 */
+}
+}
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+<h3>일본 여행 관련 뉴스</h3>
+<img src="/images/6.jpg" alt="뉴스 이미지 1">
+<p>최근 일본의 관광업계가 회복세를 보이고 있습니다.</p>
+<img src="/images/5.jpg" alt="뉴스 이미지 2">
+<p>일본의 새로운 관광지, 가고시마가 주목받고 있습니다!</p>
+<img src="/images/4.jpg" alt="뉴스 이미지 3">
+<p>교토의 벚꽃 시즌이 다가오고 있습니다. 미리 예약하세요!</p>
+</div>
+
+<div class="container">
+<div class="header">
+<h1>일본 여행지 추천</h1>
+<h2>지역별 베스트 여행지 TOP 6</h2>
+</div>
+
+<div class="banner">
+<h2>지금 일본 여행을 계획하세요!</h2>
+<p>아름다운 경치와 맛있는 음식이 기다리고 있습니다. 아래 여행지를 클릭하여 자세한 정보를 확인하세요!</p>
+</div>
+
+<div class="section">
+<div class="top-destinations">
+<div class="destination" onclick="openModal('tokyo')">
+<img src="/images/7.jpg" alt="도쿄">
+<h3>도쿄</h3>
+</div>
+<div class="destination" onclick="openModal('kyoto')">
+<img src="/images/8.webp" alt="교토">
+<h3>교토</h3>
+</div>
+<div class="destination" onclick="openModal('osaka')">
+<img src="/images/9.webp" alt="오사카">
+<h3>오사카</h3>
+</div>
+<div class="destination" onclick="openModal('fukuoka')">
+<img src="/images/10.jpg" alt="후코오카">
+<h3>후코오카</h3>
+</div>
+<div class="destination" onclick="openModal('okinawa')">
+<img src="/images/11.jpg" alt="오키나와">
+<h3>오키나와</h3>
+</div>
+<div class="destination" onclick="openModal('hiroshima')">
+<img src="/images/12.jpg" alt="히로시마">
+<h3>히로시마</h3>
+</div>
+</div>
+</div>
+</div>
+
+<div class="sidebar">
+<h3>일본 여행 상품</h3>
+<img src="/images/3.jpg" alt="상품 이미지 1">
+<p>특가 항공권 및 호텔 예약!</p>
+<img src="/images/2.jpg" alt="상품 이미지 2">
+<p>일본의 유명 관광지 투어 패키지!</p>
+<img src="/images/1.jpg" alt="상품 이미지 3">
+<p>일본 음식 체험 클래스!</p>
+</div>
+
+<div id="tokyo" class="modal">
+<div class="modal-content">
+<span class="close" onclick="closeModal('tokyo')">&times;</span>
+<h3>도쿄</h3>
+<p>도쿄는 현대와 전통이 어우러진 도시로, 다양한 문화와 쇼핑을 즐길 수 있습니다. 유명한 관광지로는 도쿄 타워, 아사쿠사, 시부야 등이 있습니다.</p>
+<p>맛집: <strong>스시 잔마이</strong> - 신선한 스시와 다양한 해산물을 제공합니다.</p>
+</div>
+</div>
+
+<div id="kyoto" class="modal">
+<div class="modal-content">
+<span class="close" onclick="closeModal('kyoto')">&times;</span>
+<h3>교토</h3>
+<p>교토는 일본의 전통 문화가 살아 숨쉬는 도시로, 아름다운 사원과 정원이 많습니다. 기온 거리와 금각사, 은각사를 꼭 방문해 보세요.</p>
+<p>맛집: <strong>기온 스시</strong> - 품질 높은 스시와 일본 전통 요리를 제공합니다.</p>
+</div>
+
+<div id="osaka" class="modal">
+<div class="modal-content">
+<span class="close" onclick="closeModal('osaka')">&times;</span>
+<h3>오사카</h3>
+<p>오사카는 일본의 미식 수도로 유명하며, 다양한 거리 음식과 맛집이 가득합니다. 특히 도톤보리 지역은 필수 방문지입니다.</p>
+<p>맛집: <strong>다꼬야끼 가게</strong> - 인기 있는 다꼬야끼 전문점으로, 바삭한 겉과 부드러운 속이 일품입니다.</p>
+</div>
+</div>
+
+<div id="fukuoka" class="modal">
+<div class="modal-content">
+<span class="close" onclick="closeModal('fukuoka')">&times;</span>
+<h3>후코오카</h3>
+<p>후코오카는 일본의 하카타 지역으로 유명하며, 맛있는 라멘과 다양한 해산물 요리를 즐길 수 있습니다. 야나가와 강을 따라 아름다운 경치를 감상해 보세요.</p>
+<p>맛집: <strong>하카타 라멘</strong> - 진한 국물의 라멘으로 유명한 맛집입니다.</p>
+</div>
+</div>
+
+<div id="okinawa" class="modal">
+<div class="modal-content">
+<span class="close" onclick="closeModal('okinawa')">&times;</span>
+<h3>오키나와</h3>
+<p>오키나와는 아름다운 해변과 독특한 문화로 유명한 섬입니다. 스쿠버 다이빙과 해양 스포츠를 즐기기에 최적의 장소입니다.</p>
+<p>맛집: <strong>오키나와 소바</strong> - 쫄깃한 면과 풍부한 국물의 오키나와 전통 요리입니다.</p>
+</div>
+</div>
+
+<div id="hiroshima" class="modal">
+<div class="modal-content">
+<span class="close" onclick="closeModal('hiroshima')">&times;</span>
+<h3>히로시마</h3>
+<p>히로시마는 역사적으로 중요한 도시로, 평화 기념 공원과 원폭 돔이 있습니다. 또한, 맛있는 오코노미야키로 유명합니다.</p>
+<p>맛집: <strong>히로시마 오코노미야</strong> - 풍성한 재료가 들어간 오코노미야키 전문점입니다.</p>
+</div>
+</div>
+
+<script>
+function openModal(region) {
+document.getElementById(region).style.display = "block";
+}
+
+function closeModal(region) {
+document.getElementById(region).style.display = "none";
+}
+
+window.onclick = function(event) {
+if (event.target.className === 'modal') {
+closeModal(event.target.id);
+}
+}
+</script>
+
+</body>
+</html>
