@@ -1,0 +1,36 @@
+/* login.css와 동일한 레이아웃 사용 */
+.signup-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 120px - 60px); /* 헤더와 푸터 제외 */
+    background-color: #f6f5ef;
+}
+.signup-section .inner {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.signup-section h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+.signup-section form input {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.signup-section form .btn {
+    width: 100%;
+    margin-top: 10px;
+    background-color: #333;
+    color: #fff;
+}
